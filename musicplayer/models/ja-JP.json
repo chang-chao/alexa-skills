@@ -1,0 +1,100 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "いろあそび",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "MyColorIsIntent",
+                    "slots": [
+                        {
+                            "name": "Color",
+                            "type": "LIST_OF_COLORS"
+                        }
+                    ],
+                    "samples": [
+                        "一番好きな色は {Color} です",
+                        "{Color}",
+                        "{Color} だ",
+                        "{Color} です"
+                    ]
+                },
+                {
+                    "name": "WhatsMyColorIntent",
+                    "slots": [],
+                    "samples": [
+                        "私の色は",
+                        "私の色は何ですか",
+                        "私の一番好きな色は",
+                        "私の一番好きな色は何ですか",
+                        "私の色を教えて"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "LIST_OF_COLORS",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "緑",
+                                "synonyms": [
+                                    "緑色"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "青",
+                                "synonyms": [
+                                    "青色"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "紫",
+                                "synonyms": [
+                                    "紫色"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "赤",
+                                "synonyms": [
+                                    "赤色"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "オレンジ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "黄色"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
