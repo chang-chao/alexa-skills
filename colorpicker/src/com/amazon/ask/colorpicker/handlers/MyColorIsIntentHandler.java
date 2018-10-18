@@ -55,8 +55,10 @@ public class MyColorIsIntentHandler implements RequestHandler {
 			String favoriteColor = favoriteColorSlot.getValue();
 			input.getAttributesManager().setSessionAttributes(Collections.singletonMap(COLOR_KEY, favoriteColor));
 
-			speechText = String.format("あなたが一番好きな色は %s だということは了解いたしました。  " + "次は、「一番好きな色は何ですか」と聞いてください", favoriteColor);
-			repromptText = "「一番好きな色は何ですか」と聞いてください";
+			speechText = String.format("あなたが一番好きな色は %s だということは了解いたしました。  "
+
+					+ "次は、「私の色は？」と聞いてください", favoriteColor);
+			repromptText = "「私の色は？」と聞いてください";
 
 		} else {
 			// Render an error since we don't know what the users favorite color is.
